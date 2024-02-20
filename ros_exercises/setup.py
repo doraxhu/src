@@ -23,7 +23,8 @@ setup(
             'my_node = ros_exercises.my_node:main',
 	    'talker = ros_exercises.publisher_member_function:main',
 	    'listener = ros_exercises.subscriber_member_function:main',
-	    'simple_publisher = ros_exercises.simple_publisher:main'
+	    'simple_publisher = ros_exercises.simple_publisher:main',
+	    'simple_subscriber = ros_exercises.simple_subscriber:main'
         ],
     },
 )
