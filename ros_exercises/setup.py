@@ -15,12 +15,15 @@ setup(
     zip_safe=True,
     maintainer='racecar',
     maintainer_email='dorah@mit.edu',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    description='Description: minimal publisher/subscriber using rclpy',
+    license='TODO: License declaration (idk)',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'my_node = ros_exercises.my_node:main'
+            'my_node = ros_exercises.my_node:main',
+	    'talker = ros_exercises.publisher_member_function:main',
+	    'listener = ros_exercises.subscriber_member_function:main',
+	    'simple_publisher = ros_exercises.simple_publisher:main'
         ],
     },
 )
