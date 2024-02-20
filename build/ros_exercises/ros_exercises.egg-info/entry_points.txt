@@ -1,0 +1,3 @@
+[console_scripts]
+my_node = ros_exercises.my_node:main
+

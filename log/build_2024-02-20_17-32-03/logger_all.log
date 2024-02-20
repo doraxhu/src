@@ -1,0 +1,110 @@
+[2.268s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[2.268s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f0f45125ac0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f0f45125ac0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f0f45125fa0>)
+[2.375s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.376s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.376s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.377s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.377s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.378s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.378s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/racecar/racecar_ws/src'
+[2.379s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.379s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.380s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.380s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.381s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.382s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.395s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.395s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.396s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.398s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.398s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.398s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.400s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.400s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.401s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.402s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.402s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.403s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.404s] Level 1:colcon.colcon_core.package_identification:_identify(ros_exercises) by extensions ['ignore', 'ignore_ament_install']
+[2.404s] Level 1:colcon.colcon_core.package_identification:_identify(ros_exercises) by extension 'ignore'
+[2.404s] Level 1:colcon.colcon_core.package_identification:_identify(ros_exercises) by extension 'ignore_ament_install'
+[2.405s] Level 1:colcon.colcon_core.package_identification:_identify(ros_exercises) by extensions ['colcon_pkg']
+[2.405s] Level 1:colcon.colcon_core.package_identification:_identify(ros_exercises) by extension 'colcon_pkg'
+[2.406s] Level 1:colcon.colcon_core.package_identification:_identify(ros_exercises) by extensions ['colcon_meta']
+[2.406s] Level 1:colcon.colcon_core.package_identification:_identify(ros_exercises) by extension 'colcon_meta'
+[2.406s] Level 1:colcon.colcon_core.package_identification:_identify(ros_exercises) by extensions ['ros']
+[2.406s] Level 1:colcon.colcon_core.package_identification:_identify(ros_exercises) by extension 'ros'
+[2.410s] DEBUG:colcon.colcon_core.package_identification:Package 'ros_exercises' with type 'ros.ament_python' and name 'ros_exercises'
+[2.410s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.410s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.411s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.411s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.411s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.575s] Level 5:colcon.colcon_core.verb:set package 'ros_exercises' build argument 'cmake_args' from command line to 'None'
+[2.575s] Level 5:colcon.colcon_core.verb:set package 'ros_exercises' build argument 'cmake_target' from command line to 'None'
+[2.575s] Level 5:colcon.colcon_core.verb:set package 'ros_exercises' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.576s] Level 5:colcon.colcon_core.verb:set package 'ros_exercises' build argument 'cmake_clean_cache' from command line to 'False'
+[2.576s] Level 5:colcon.colcon_core.verb:set package 'ros_exercises' build argument 'cmake_clean_first' from command line to 'False'
+[2.576s] Level 5:colcon.colcon_core.verb:set package 'ros_exercises' build argument 'cmake_force_configure' from command line to 'False'
+[2.577s] Level 5:colcon.colcon_core.verb:set package 'ros_exercises' build argument 'ament_cmake_args' from command line to 'None'
+[2.577s] Level 5:colcon.colcon_core.verb:set package 'ros_exercises' build argument 'catkin_cmake_args' from command line to 'None'
+[2.577s] Level 5:colcon.colcon_core.verb:set package 'ros_exercises' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.578s] DEBUG:colcon.colcon_core.verb:Building package 'ros_exercises' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/racecar/racecar_ws/src/build/ros_exercises', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/racecar/racecar_ws/src/install/ros_exercises', 'merge_install': False, 'path': '/home/racecar/racecar_ws/src/ros_exercises', 'symlink_install': False, 'test_result_base': None}
+[2.613s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.650s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.651s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/racecar/racecar_ws/src/ros_exercises' with build type 'ament_python'
+[2.652s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_exercises', 'ament_prefix_path')
+[2.699s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/racecar/racecar_ws/src/install/ros_exercises/share/ros_exercises/hook/ament_prefix_path.ps1'
+[2.705s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/racecar/racecar_ws/src/install/ros_exercises/share/ros_exercises/hook/ament_prefix_path.dsv'
+[2.708s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/racecar/racecar_ws/src/install/ros_exercises/share/ros_exercises/hook/ament_prefix_path.sh'
+[2.752s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.753s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.179s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/racecar/racecar_ws/src/ros_exercises'
+[3.224s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.224s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.967s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/racecar/racecar_ws/src/ros_exercises': PYTHONPATH=/home/racecar/racecar_ws/src/build/ros_exercises/prefix_override:/home/racecar/racecar_ws/src/install/ros_exercises/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/ros_exercises build --build-base /home/racecar/racecar_ws/src/build/ros_exercises/build install --record /home/racecar/racecar_ws/src/build/ros_exercises/install.log --install-scripts $base/lib/ros_exercises --single-version-externally-managed
+[4.410s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/racecar/racecar_ws/src/ros_exercises' returned '0': PYTHONPATH=/home/racecar/racecar_ws/src/build/ros_exercises/prefix_override:/home/racecar/racecar_ws/src/install/ros_exercises/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/ros_exercises build --build-base /home/racecar/racecar_ws/src/build/ros_exercises/build install --record /home/racecar/racecar_ws/src/build/ros_exercises/install.log --install-scripts $base/lib/ros_exercises --single-version-externally-managed
+[4.457s] Level 1:colcon.colcon_core.environment:checking '/home/racecar/racecar_ws/src/install/ros_exercises' for CMake module files
+[4.462s] Level 1:colcon.colcon_core.environment:checking '/home/racecar/racecar_ws/src/install/ros_exercises' for CMake config files
+[4.472s] Level 1:colcon.colcon_core.environment:checking '/home/racecar/racecar_ws/src/install/ros_exercises/lib'
+[4.472s] Level 1:colcon.colcon_core.environment:checking '/home/racecar/racecar_ws/src/install/ros_exercises/bin'
+[4.473s] Level 1:colcon.colcon_core.environment:checking '/home/racecar/racecar_ws/src/install/ros_exercises/lib/pkgconfig/ros_exercises.pc'
+[4.474s] Level 1:colcon.colcon_core.environment:checking '/home/racecar/racecar_ws/src/install/ros_exercises/lib/python3.8/site-packages'
+[4.474s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros_exercises', 'pythonpath')
+[4.516s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/racecar/racecar_ws/src/install/ros_exercises/share/ros_exercises/hook/pythonpath.ps1'
+[4.519s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/racecar/racecar_ws/src/install/ros_exercises/share/ros_exercises/hook/pythonpath.dsv'
+[4.521s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/racecar/racecar_ws/src/install/ros_exercises/share/ros_exercises/hook/pythonpath.sh'
+[4.523s] Level 1:colcon.colcon_core.environment:checking '/home/racecar/racecar_ws/src/install/ros_exercises/bin'
+[4.523s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros_exercises)
+[4.565s] INFO:colcon.colcon_core.shell:Creating package script '/home/racecar/racecar_ws/src/install/ros_exercises/share/ros_exercises/package.ps1'
+[4.568s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/racecar/racecar_ws/src/install/ros_exercises/share/ros_exercises/package.dsv'
+[4.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/racecar/racecar_ws/src/install/ros_exercises/share/ros_exercises/package.sh'
+[4.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/racecar/racecar_ws/src/install/ros_exercises/share/ros_exercises/package.bash'
+[4.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/racecar/racecar_ws/src/install/ros_exercises/share/ros_exercises/package.zsh'
+[4.577s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/racecar/racecar_ws/src/install/ros_exercises/share/colcon-core/packages/ros_exercises)
+[4.581s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.581s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.582s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.582s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.644s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[4.644s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.645s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.645s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.662s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[4.663s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.709s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/racecar/racecar_ws/src/install/local_setup.ps1'
+[4.713s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/racecar/racecar_ws/src/install/_local_setup_util_ps1.py'
+[4.717s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/racecar/racecar_ws/src/install/setup.ps1'
+[4.764s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/racecar/racecar_ws/src/install/local_setup.sh'
+[4.766s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/racecar/racecar_ws/src/install/_local_setup_util_sh.py'
+[4.768s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/racecar/racecar_ws/src/install/setup.sh'
+[4.817s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/racecar/racecar_ws/src/install/local_setup.bash'
+[4.821s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/racecar/racecar_ws/src/install/setup.bash'
+[4.910s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/racecar/racecar_ws/src/install/local_setup.zsh'
+[4.914s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/racecar/racecar_ws/src/install/setup.zsh'
