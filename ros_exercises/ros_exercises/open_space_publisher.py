@@ -17,6 +17,7 @@ from rclpy.node import Node
 
 from sensor_msgs.msg import LaserScan
 from std_msgs.msg import Float32
+from tutorial_interfaces.msg import OpenSpace
 import math
 
 
@@ -32,11 +33,13 @@ class ComplexSubscriber(Node):
             10)
         timer_period = 0.05
         self.subscription  # prevent unused variable warning
-        self.publisher_1 = self.create_publisher(Float32, 'open_space/distance', 10)
-        self.publisher_2 = self.create_publisher(Float32, 'open_space/angle', 10)
+        #self.publisher_1 = self.create_publisher(Float32, 'open_space/distance', 10)
+        #self.publisher_2 = self.create_publisher(Float32, 'open_space/angle', 10)
+        self.publisher_ = self.create_publisher(OpenSpace, 'open_space', 10)
 
 
     def listener_callback(self, msg):
+        """
         # find the range element with the greatest value
         # by getting the range from msg
         greatest = Float32()
@@ -55,6 +58,22 @@ class ComplexSubscriber(Node):
         angle.data = msg.angle_min + index * msg.angle_increment
         self.publisher_2.publish(angle)
         self.get_logger().info('ANGLE: "%s"' % angle)
+        """
+        # find the range element with the greatest value from ranges
+        ans = OpenSpace()
+        ans.distance = msg.ranges[0]
+        index = 0
+        count = 0
+        for ret in msg.ranges:
+            if ret > ans.distance: 
+                ans.distance = ret
+                index = count
+            count += 1
+        
+        # publish corresponding angle and return value
+        ans.angle = msg.angle_min + index * msg.angle_increment
+        self.publisher_.publish(ans)
+        self.get_logger().info('ANGLE: "%s"' % ans.angle)
 
 
 def main(args=None):
