@@ -1,0 +1,9 @@
+[console_scripts]
+fake_scan_publisher = ros_exercises.fake_scan_publisher:main
+listener = ros_exercises.subscriber_member_function:main
+my_node = ros_exercises.my_node:main
+open_space_publisher = ros_exercises.open_space_publisher:main
+simple_publisher = ros_exercises.simple_publisher:main
+simple_subscriber = ros_exercises.simple_subscriber:main
+talker = ros_exercises.publisher_member_function:main
+
