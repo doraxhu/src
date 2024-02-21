@@ -28,7 +28,7 @@ class SimplePublisher(Node):
 
     def timer_callback(self):
         msg = Float32()
-        msg.data = random.random()
+        msg.data = random.uniform(0.0, 10.0)
         self.publisher_.publish(msg)
         self.get_logger().info('Publishing: "%s"' % msg.data)
 

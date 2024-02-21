@@ -24,7 +24,8 @@ setup(
 	    'talker = ros_exercises.publisher_member_function:main',
 	    'listener = ros_exercises.subscriber_member_function:main',
 	    'simple_publisher = ros_exercises.simple_publisher:main',
-	    'simple_subscriber = ros_exercises.simple_subscriber:main'
+	    'simple_subscriber = ros_exercises.simple_subscriber:main',
+	    'complex_publisher = ros_exercises.complex_publisher:main'
         ],
     },
 )
